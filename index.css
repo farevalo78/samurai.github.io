@@ -15,10 +15,31 @@
   width: 80px;
 }
 
+
 #main .carousel-inner img {
   max-height: 70vh;
   object-fit: cover;
   filter: grayscale(70%);
+}
+
+#receta img {
+  max-height: 70vh;
+  object-fit: cover;
+  filter: grayscale(70%);
+}
+
+#receta {
+  position: relative;
+}
+
+#receta .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
 }
 
 #carousel {
@@ -39,6 +60,10 @@
 #carousel .overlay .row {
   height: 100%;
 }
+#receta .overlay .container,
+#receta .overlay .row {
+  height: 100%;
+}
 
 #place-time {
   background-color: #343a40;
@@ -55,4 +80,8 @@
 
 #footer a {
   color: white;
+}
+
+ul li {
+font-size: 20px;
 }
